@@ -38,13 +38,6 @@ class Interconnect(models.Model):
   is_open = models.BooleanField()
   capacity = models.IntegerField()
 
-
-  
-
-
-
-    
-
 class Site(models.Model):
   name = models.CharField(max_length=100)
   operator = models.ForeignKey(Switch, related_name='op')
